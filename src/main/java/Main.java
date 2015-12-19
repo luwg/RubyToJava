@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         ScriptEngineManager manager = new ScriptEngineManager();
 
-        ScriptEngine engine = manager.getEngineByName("jruby");
+        ScriptEngine engine = manager.getEngineByName("ruby");
 
         engine.eval(new BufferedReader(new FileReader("ruby/TempConverter.rb")));
 
